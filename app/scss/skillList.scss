@@ -1,0 +1,39 @@
+@import './var.scss';
+
+.skillList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6.1706rem;
+    max-width: 10.4038rem;
+    width: 100%;
+
+    &>li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //justify-content: space-between;
+        margin-bottom: 5.1069rem;
+
+        @media (min-width: $breakpointXl) {
+            margin-bottom: 0;
+            max-width: 10.4038rem;
+            width: 100%;
+        }
+    }
+
+    &>li:last-child {
+        margin-bottom: 0;
+    }
+
+
+    @media (min-width: $breakpointXl) {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: none;
+        margin-bottom: 6.9413rem;
+    }
+
+}

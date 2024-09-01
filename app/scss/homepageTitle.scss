@@ -1,0 +1,17 @@
+@import './var.scss';
+
+
+.homepageTitle {
+    display: flex;
+    flex-direction: column;
+    //background-color: rgba(0, 128, 0, 0.411);
+    margin-bottom: 5.1875rem;
+
+     @media (min-width: $breakpointXl) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 6.5038rem;
+    }
+
+}

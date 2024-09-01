@@ -1,0 +1,10 @@
+@import './var.scss';
+
+
+.footer__messagersSubtitle {
+    margin-bottom: 5.625rem;
+
+    @media (min-width: $breakpointXl) {
+        margin-bottom: 7.6994rem;
+    }
+}

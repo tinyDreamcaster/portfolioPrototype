@@ -1,0 +1,11 @@
+@import './var.scss';
+
+.homepageAbout__aboutTitle {
+    margin-top: 5.0625rem;
+    margin-bottom: 1.8713rem;
+
+    @media (min-width: $breakpointXl) {
+        margin-top: 7.5156rem;
+        margin-bottom: 1.1056rem;
+    }
+}

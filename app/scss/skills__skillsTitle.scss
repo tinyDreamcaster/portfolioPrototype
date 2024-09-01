@@ -1,0 +1,11 @@
+@import './var.scss';
+
+.skills__skillsTitle {
+    margin-top: 5.1875rem;
+    margin-bottom: 3.125rem;
+
+    @media (min-width: $breakpointXl) {
+        margin-top: 5.6875rem;
+        margin-bottom: 4.3187rem;
+    }
+}

@@ -1,0 +1,8 @@
+@import './mixins/mixinShortDescr.scss';
+
+
+.shortDescriptionAge {
+    @include mixinShortDescr();
+    margin-bottom: 2.3087rem;
+
+}

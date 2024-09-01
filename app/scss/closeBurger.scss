@@ -1,0 +1,31 @@
+@import './var.scss';
+
+.closeBurger {
+    z-index: 20;
+    position: relative;
+    align-self: flex-end;
+    top: 4.8125rem;
+    left: -1.75rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 1.7106rem;
+        height: .2375rem;
+        background-color: $grey-color;
+        transform: rotate(45deg);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1.7106rem;
+        height: .2375rem;
+        background-color: $grey-color;
+        transform: rotate(-45deg);
+    }
+
+     @media (min-width: $breakpointXl) {
+        display: none;
+    }
+}

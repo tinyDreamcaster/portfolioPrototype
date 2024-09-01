@@ -1,0 +1,9 @@
+@import './var.scss';
+
+.skills__workInProgramms {
+    margin-bottom: 4.435rem;
+
+    @media (min-width: $breakpointXl) {
+        margin-bottom: 5.2181rem;
+    }
+}

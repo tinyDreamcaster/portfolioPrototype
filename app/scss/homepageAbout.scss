@@ -1,0 +1,11 @@
+@import './var.scss';
+
+.homepageAbout {
+
+    background-color: $bckgrnd-color;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}

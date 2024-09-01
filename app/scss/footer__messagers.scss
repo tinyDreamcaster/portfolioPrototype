@@ -1,0 +1,9 @@
+@import './var.scss';
+
+.footer__messagers {
+    margin-bottom: 3.005rem;
+
+    @media (min-width: $breakpointXl) {
+        margin-bottom: 2.86rem;
+    }
+}

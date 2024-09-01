@@ -1,0 +1,16 @@
+@import './mixins/mixinClassHover.scss';
+
+.messagers {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 19.75rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &>li {
+        @include mixinClassHover;
+    }
+}

@@ -1,0 +1,9 @@
+@import './var.scss';
+
+.footer__footerSubtitle {
+    margin-bottom: 2.49rem;
+
+    @media (min-width: $breakpointXl) {
+        margin-bottom: 1.85rem;
+    }
+}

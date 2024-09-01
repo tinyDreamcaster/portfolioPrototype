@@ -1,0 +1,38 @@
+@import './var.scss';
+
+
+@mixin burgerLine {
+    content: '';
+    width: 2.0625rem;
+    height: .24rem;
+    background-color: black;
+}
+
+
+
+.openBurger {
+    position: relative;
+    @include burgerLine();
+
+    &::before {
+        position: absolute;
+        @include burgerLine();
+        top: -0.48rem;
+    }
+
+    &::after {
+        position: absolute;
+        @include burgerLine();
+        top: .48rem;
+
+    }
+
+    top: 5.25rem;
+    left: 17.75rem;
+
+     @media (min-width: $breakpointXl) {
+
+        display: none;
+
+    }
+}

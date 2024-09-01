@@ -1,0 +1,13 @@
+@import './var.scss';
+
+
+.portfolio__portfolioTitle {
+    text-align: center;
+    margin-top: 5.0625rem;
+    margin-bottom: 3.8712rem;
+
+    @media (min-width: $breakpointXl) {
+        margin-top: 7.0581rem;
+        margin-bottom: 2.9375rem;
+    }
+}

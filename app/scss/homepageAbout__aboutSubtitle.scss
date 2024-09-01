@@ -1,0 +1,9 @@
+@import './var.scss'; 
+
+.homepageAbout__aboutSubtitle {
+    margin-bottom: 4.75rem;
+
+    @media (min-width: $breakpointXl) {
+        margin-bottom: 6.6875rem;
+    }
+}

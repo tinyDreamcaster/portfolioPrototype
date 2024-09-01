@@ -1,0 +1,14 @@
+@import './var.scss';
+
+
+.header__languageList {
+    align-self: flex-end;
+    position: relative;
+    top: 9.375rem;
+    left: 3.125rem;
+
+     @media (min-width: $breakpointXl) {
+        left: 1.125rem;
+        top: 4.1563rem;
+    }
+}

@@ -1,0 +1,6 @@
+@import './mixins/mixinShortDescr.scss';
+
+.shortDescriptionProfession {
+    @include mixinShortDescr();
+
+}
