@@ -12,7 +12,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script defer data-domain="tinydreamcaster.github.io/portfolioprototype" src="https://plausible.io/js/script.tagged-events.js"></script>
+        <script defer data-domain="tinydreamcaster.github.io/portfolioprototype" src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"></script>
+        <script>window.plausible = window.plausible || function() {(window.plausible.q = window.plausible.q || []).push(arguments)}</script>
       </head>
       <body className={'pageBody'}>{children}</body>
     </html>
