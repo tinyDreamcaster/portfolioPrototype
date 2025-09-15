@@ -101,7 +101,7 @@ export default function Home() {
     );
 
   }
- 
+
 
 
   return (
@@ -123,7 +123,7 @@ export default function Home() {
               </ul>
             </nav>
             <ul className={styles.languageList + ' ' + styles.header__languageList}>
-              <li ref={languageRURef} className={styles.languageRU} onClick={() => {
+              <li ref={languageRURef} className={`${styles.languageRU} plausible-event-name=click`} onClick={() => {
                 HandleTranslatePage('ru');
               }}>RU </li>
               <li ref={languageENGRef} className={styles.languageENG} onClick={() => {
