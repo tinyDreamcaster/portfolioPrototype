@@ -11,9 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <script defer data-domain="tinydreamcaster.github.io/portfolioprototype" src="https://plausible.io/js/script.js"></script>
-      </Head>
+      </head>
       <body className={'pageBody'}>{children}</body>
     </html>
   );
