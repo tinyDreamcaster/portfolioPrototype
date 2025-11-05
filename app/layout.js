@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
 
         <meta
           httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; script-src 'self' plausible.io; connect-src 'self' plausible.io"
+          content="default-src 'self' *.plausible.io"
         />
         <script
           defer
