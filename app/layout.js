@@ -1,6 +1,5 @@
 import Head from "next/head";
 import "./globals.scss";
-import PlausibleProvider from "next-plausible";
 import Script from "next/script";
 
 
