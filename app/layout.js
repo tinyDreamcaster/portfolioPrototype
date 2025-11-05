@@ -9,6 +9,10 @@ export const metadata = {
   description: "Прототип портфолио веб-дизайнера",
 };
 
+init({
+  domain: 'tinydreamcaster.github.io/portfolioPrototype'
+})
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
