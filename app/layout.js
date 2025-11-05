@@ -1,5 +1,6 @@
 import Head from "next/head";
 import "./globals.scss";
+import PlausibleProvider from "next-plausible";
 
 
 
@@ -11,19 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src 'self' *.plausible.io"
-        />
-        <script
-          defer
-          data-domain="tinydreamcaster.github.io/portfolioPrototype"
-          src="https://plausible.io/js/script.js"
-        />
-      </head>
-      <body className={'pageBody'}>{children}</body>
+      <PlausibleProvider domain="tinydreamcaster.github.io/portfolioPrototype">
+        <body className={'pageBody'}>{children}</body>
+      </PlausibleProvider>
     </html>
   );
 }
