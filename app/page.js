@@ -105,7 +105,8 @@ export default function Home() {
     // Отправка события
     window.plausible('testEvent', {
       props: {
-        props: { key1: 'TEST1', key2: 'TEST2' }
+        author: 'ololo',
+        user: 'azaza'
       }
     });
   };
