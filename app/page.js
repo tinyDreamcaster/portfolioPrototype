@@ -4,6 +4,7 @@ import styles from "./page.module.scss";
 import Skill from './components/Skill';
 import TranslatePage from './components/TranslatePage';
 import BurgerMenu from './components/BurgerMenu';
+import { usePlausible } from 'next-plausible';
 
 export default function Home() {
 
@@ -124,6 +125,7 @@ export default function Home() {
             </nav>
             <ul className={styles.languageList + ' ' + styles.header__languageList}>
               <li ref={languageRURef} className={`${styles.languageRU}`} onClick={() => {
+                usePlausible('customEventName');
                 HandleTranslatePage('ru');
               }}>RU </li>
               <li ref={languageENGRef} className={styles.languageENG} onClick={() => {
