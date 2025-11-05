@@ -11,6 +11,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="script-src 'self' 'unsafe-inline' https://plausible.io; connect-src 'self' https://plausible.io"
+        />
+        {/* <script
+          defer
+          data-domain="yourusername.github.io" // Ваш GitHub Pages URL
+          src="https://plausible.io/js/script.js"
+        /> */}
+      </head>
       <body className={'pageBody'}>{children}</body>
     </html>
   );
