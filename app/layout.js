@@ -15,13 +15,13 @@ export default function RootLayout({ children }) {
 
         <meta
           httpEquiv="Content-Security-Policy"
-          content="script-src 'self' 'unsafe-inline' https://plausible.io; connect-src 'self' https://plausible.io"
+          content="default-src 'self'; script-src 'self' plausible.io; connect-src 'self' plausible.io"
         />
-        {/* <script
+        <script
           defer
-          data-domain="yourusername.github.io" // Ваш GitHub Pages URL
+          data-domain="tinydreamcaster.github.io/portfolioPrototype"
           src="https://plausible.io/js/script.js"
-        /> */}
+        />
       </head>
       <body className={'pageBody'}>{children}</body>
     </html>
