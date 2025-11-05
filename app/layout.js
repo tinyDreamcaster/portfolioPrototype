@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <PlausibleProvider domain="tinydreamcaster.github.io" />
+        <PlausibleProvider domain="tinydreamcaster.github.io/portfolioPrototype" />
       </head>
       {/* <PlausibleProvider domain="tinydreamcaster.github.io/portfolioPrototype"> */}
       <body className={'pageBody'}>{children}</body>
