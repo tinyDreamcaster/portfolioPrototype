@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           selfHosted={false}
           integrity=""
           scriptProps={{
-            src: "https://plausible.io/js/pa-o6h6W5W5nMo340M36V5Fc.js",
+            src: "https://plausible.io/js/script.js",
             async: true,
             defer: true,
           }}
