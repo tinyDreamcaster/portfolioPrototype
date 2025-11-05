@@ -16,19 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <PlausibleProvider
-          domain="tinydreamcaster.github.io/portfolioPrototype"
-          trackOutboundLinks={true}
-          trackFileDownloads={true}
-          selfHosted={false}
-          integrity=""
-          scriptProps={{
-            src: "https://plausible.io/js/script.js",
-            async: true,
-            defer: true,
-          }}
-          enabled={true} // Только в production
-        />
+        <PlausibleProvider domain="tinydreamcaster.github.io" />
       </head>
       {/* <PlausibleProvider domain="tinydreamcaster.github.io/portfolioPrototype"> */}
       <body className={'pageBody'}>{children}</body>
