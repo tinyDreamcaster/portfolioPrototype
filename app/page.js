@@ -103,7 +103,7 @@ export default function Home() {
 
   }
 
-
+  const plausible = usePlausible()
 
   return (
     <>
@@ -125,7 +125,7 @@ export default function Home() {
             </nav>
             <ul className={styles.languageList + ' ' + styles.header__languageList}>
               <li ref={languageRURef} className={`${styles.languageRU}`} onClick={() => {
-                usePlausible('customEventName');
+                plausible('customEventName');
                 HandleTranslatePage('ru');
               }}>RU </li>
               <li ref={languageENGRef} className={styles.languageENG} onClick={() => {
