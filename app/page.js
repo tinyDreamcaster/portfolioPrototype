@@ -105,7 +105,7 @@ export default function Home() {
     // Отправка события
     window.plausible('testEvent', {
       props: {
-        page: window.location.pathname
+        props: { key1: 'TEST1', key2: 'TEST2' }
       }
     });
   };
