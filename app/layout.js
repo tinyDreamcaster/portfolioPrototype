@@ -15,32 +15,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-
       <head>
-        <Script
-          strategy="beforeInteractive"
-          src="https://plausible.io/js/pa-o4ooHjXTAqrjqudPiw7tX.js"
-        />
-        <Script
-          id="plausible-init"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.plausible = window.plausible || function() { 
-                (window.plausible.q = window.plausible.q || []).push(arguments) 
-              };
-              window.plausible.init = window.plausible.init || function(i) { 
-                window.plausible.o = i || {}; 
-              };
-              window.plausible.init();
-            `,
+        <PlausibleProvider
+          domain="tinydreamcaster.github.io/portfolioPrototype"
+          trackOutboundLinks={true}
+          trackFileDownloads={true}
+          selfHosted={false}
+          integrity=""
+          scriptProps={{
+            src: "https://plausible.io/js/pa-o6h6W5W5nMo340M36V5Fc.js",
+            async: true,
+            defer: true,
           }}
+          enabled={true} // Только в production
         />
-
       </head>
-      <PlausibleProvider domain="tinydreamcaster.github.io/portfolioPrototype">
-        <body className={'pageBody'}>{children}</body>
-      </PlausibleProvider>
+      {/* <PlausibleProvider domain="tinydreamcaster.github.io/portfolioPrototype"> */}
+      <body className={'pageBody'}>{children}</body>
+
     </html>
   );
 }
