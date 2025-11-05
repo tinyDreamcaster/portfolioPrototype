@@ -101,6 +101,14 @@ export default function Home() {
     );
 
   }
+  const handleAnalyticClick = () => {
+    // Отправка события
+    window.plausible('testEvent', {
+      props: {
+        page: window.location.pathname
+      }
+    });
+  };
 
 
 
@@ -124,6 +132,7 @@ export default function Home() {
             </nav>
             <ul className={styles.languageList + ' ' + styles.header__languageList}>
               <li ref={languageRURef} className={`${styles.languageRU}`} onClick={() => {
+                handleAnalyticClick();
                 HandleTranslatePage('ru');
               }}>RU </li>
               <li ref={languageENGRef} className={styles.languageENG} onClick={() => {
